@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<data>
+    <variable
+        name="model"
+        type="com.example.myjetpack.DataModel" />
+</data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_One"
+            android:text="@{model.text1}"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_Two"
+            android:text="@{model.text2}"
+            android:layout_below="@id/tv_One"
+            android:textColor="@color/colorAccent"/>
+
+    </RelativeLayout>
+</layout>
